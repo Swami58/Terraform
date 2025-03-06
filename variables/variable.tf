@@ -36,6 +36,6 @@ variable "protocol" {
 }
 variable "allowed_ssh" {
     type = list(string)
-    default = "[0.0.0.0/0]"
+    default = ["0.0.0.0/0"]
   
 }
