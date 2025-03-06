@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "aws" {
-    region = "us-east-1                                                                                                                                                                                                                                                                                                                                                                   jm "
+    region = "us-east-1                                                                                                                                                                                                                                                                                                                                                  "
   
 }
