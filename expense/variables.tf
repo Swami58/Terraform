@@ -50,3 +50,11 @@ variable "common_tags" {
 }
 
 #R53 VARIABLES
+variable "zone_id" {
+    default = "Z0874988SJNY8LMF81MS"
+  
+}
+variable "domain_name" {
+    default = "cloudswathi.online"
+  
+}
