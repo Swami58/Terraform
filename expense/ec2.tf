@@ -4,7 +4,7 @@ resource "aws_instance" "db" {
     instance_type = var.instance_names[count.index] == "db" ? "t3.small" : "t3.micro"
     vpc_security_group_ids = [aws_security_group.allow_ssh.id]
     tags = merge(
-        var.commom_tags,{
+        var.common_tags,{
             Name = var.instance_names[count.index]
             Module = var.instance_names[count.index]
         }

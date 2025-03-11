@@ -42,11 +42,11 @@ variable "allowed_cidr" {
     default = [ "0.0.0.0/0" ]
   
 }
-variable "commom_tags" {
+variable "common_tags" {
    default = {
     Project     = "expense"
     Environment = "Dev"
-    
+   }
 }
 
 #R53 VARIABLES
