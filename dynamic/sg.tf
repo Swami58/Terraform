@@ -5,11 +5,11 @@ resource "aws_security_group" "allow_ssh" {
     dynamic "ingress" {
         for_each = var.inbound_rules
         content { 
-        from_port   = ingress.each.value[port]
-        to_port     = ingress.each.value[port]
-        protocol    = ingress.each.value[protocol]
-        cidr_blocks  = ingress.each.value[allowed_cidr]
-     }
+            from_port   = ingress.value["port"]
+            to_port     = ingress.value["port"]
+            protocol    = ingress.value["protocol"]
+            cidr_blocks  = ingress.value["allowed_cidr"]
+        }
     }
     egress {
         from_port   = 0

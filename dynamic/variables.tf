@@ -1,6 +1,7 @@
 variable "inbound_rules"{
     type = list 
-    default = [
+    default = [ 
+        {
 
         port = 22,
         allowed_cidr = ["0.0.0.0/0"]
